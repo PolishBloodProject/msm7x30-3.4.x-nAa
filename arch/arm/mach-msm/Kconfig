@@ -775,7 +775,6 @@ config MACH_SEMC_ZEUS
 	depends on ARCH_MSM7X30
 	depends on !MSM_STACKED_MEMORY
 	select SUPPORT_ALIEN_USB_CHARGER
-	select USE_PMIC_CHARGING_ON_AMSS
 	default y
 	bool "SonyEricsson Zeus"
 	help
@@ -2375,11 +2374,6 @@ config CRADLE_SUPPORT
 	help
 	  Provides support for docking cradle. Depends on simple remote
 	  HW specific driver.
-
-config USE_PMIC_CHARGING_ON_AMSS
-	bool "Charging functionality on PMIC on AMSS"
-	depends on ARCH_MSM7X30
-	default n
 
 config SEMC_BATTERY_SHOW_HEALTH
 	bool "Enable battery health support"
