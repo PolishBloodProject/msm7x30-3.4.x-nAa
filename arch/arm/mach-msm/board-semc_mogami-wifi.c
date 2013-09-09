@@ -34,8 +34,6 @@ int mogami_wifi_power(int on)
 struct wl12xx_platform_data mogami_wlan_data __initdata = {
 	.irq = MSM_GPIO_TO_INT(MOGAMI_WIFI_IRQ_GPIO),
 	.board_ref_clock = WL12XX_REFCLOCK_19,
-	.platform_quirks = WL12XX_PLATFORM_QUIRK_EDGE_IRQ,
-	.board_tcxo_clock = WL12XX_TCXOCLOCK_19_2
 };
 
 static int __init mogami_wifi_init(void)
